@@ -1,0 +1,138 @@
+* {
+    font-family: Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --greyColor: rgb(73, 73, 73);
+    --whiteColor: #e1e1e1;
+    --lightgrey: #adadad;
+}
+
+body {
+    background: url('./Images/background_light.webp') no-repeat;
+    background-size: 100%;
+    max-height: min-content;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.add_city {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    color: var(--greyColor);
+}
+
+.search_city {
+    display: none;
+    justify-content: start;
+    justify-self: start;
+    align-items: start;
+    height: 21px;
+    width: 150px;
+}
+
+.btn_search {
+    display: none;
+}
+
+.your_city {
+    font-weight: 600;
+    color: #f8f1f1;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 180px;
+}
+
+.theme_toggle {
+    margin-right: 30px;
+    color: var(--greyColor);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #f5f2f2;
+    border: 1px solid rgb(29, 27, 27);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content * {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    color: var(--greyColor);
+}
+
+.cityDisplay {
+    margin-top: -5px;
+    color: #d6d6d6b1;
+}
+
+.weatherIcon {
+    font-size: 90px;
+    font-weight: 900;
+    margin-top: -20px;
+}
+
+.tempDisplay {
+    font-size: 100px;
+    font-weight: 800;
+    color: var(--whiteColor);
+}
+
+.humidityDisplay {
+    margin-top: 30px;
+    font-size: 25px;
+    color: var(--whiteColor);
+    font-weight: 900;
+}
+
+.windDisplay {
+    font-size: 25px;
+    color: var(--whiteColor);
+    font-weight: 900;
+}
+
+.descDisplay {
+    font-size: 30px;
+    color: var(--whiteColor);
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
