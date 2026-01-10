@@ -8,13 +8,11 @@ Built with HTML, CSS, and JavaScript, using a free public weather API.
 
 - Current temperature and weather state
 
-- Multi-day forecast
+- Forecast on next 5 days
 
 - City search
 
 - Auto refresh
-
-- Light and dark themes
 
 
 ## Technologies
@@ -23,16 +21,16 @@ Built with HTML, CSS, and JavaScript, using a free public weather API.
 
 - CSS3
 
-- JavaScript 
+- JavaScript (ES6+)
 
-- Fetch API 
+- OpenWeatherMap REST API
 
 - Animate css
 
 
 ## Installation
 
-git clone https://github.com/yourname/weather-app
+git clone https://github.com/tblackwood60/Weather-App
 cd Weather-App
 open index.html in browser
 
@@ -41,7 +39,7 @@ open index.html in browser
 
 Free to use, modify, and improve.
 
-Used API: Open-Meteo https://open-meteo.com
+Used API: Open Weather Map API https://openweathermap.org/api
 
 
 ### Author - Timothy Blackwood
