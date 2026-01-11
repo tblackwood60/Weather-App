@@ -35,6 +35,7 @@ header {
     left: 0;
     width: 100%;
     background-color: #ffffff65;
+    z-index: 1000;
 }
 
 .add_city {
@@ -91,6 +92,12 @@ header .btn_search {
 
 .div_blocks {
     gap: 1000px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .content {
@@ -101,6 +108,7 @@ header .btn_search {
     gap: 10px;
     padding-top: 20px;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .content * {
@@ -168,4 +176,3 @@ header .btn_search {
     gap: 20px;
     margin-top: 50px;
 }
-

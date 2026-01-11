@@ -45,10 +45,9 @@ async function getWeatherData(city) {
     if (!res2.ok) {
         throw new Error('Could not get weather data');
     }
-
     const weatherData = await res2.json();
-
     const {lat, lon} = weatherData.coord;
+    
     const res3 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`)
     console.log(res3);
     if (!res3.ok) {
@@ -136,7 +135,7 @@ function setForecast(forecast7, content, id) {
     forecastBlocks.classList.add('forecastBlocks');
     content.append(h1_fewdays,forecastBlocks);
 
-    for (let i = 0; i <= forecast7.length; i += 8) {
+    for (let i = 0; i < forecast7.length; i += 8) {
         const dayData = forecast7[i];
         const {main: {temp, humidity}} = dayData;
         const {description} = dayData.weather[0];
@@ -192,5 +191,10 @@ btn_searchCity.addEventListener('click', e => {
     const city = input_searchCity.value;
     input_searchCity.value = '';
     getWeatherData(city);
+})
+
+btn_themeToggle.addEventListener('click', e => {
+    e.preventDefault();
+    alert('When weather in the city will change, theme on this site is changing too. Please wait for another weather!')
 })
 

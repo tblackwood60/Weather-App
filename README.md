@@ -25,8 +25,6 @@ Built with HTML, CSS, and JavaScript, using a free public weather API.
 
 - OpenWeatherMap REST API
 
-- Animate css
-
 
 ## Installation
 
@@ -39,7 +37,7 @@ open index.html in browser
 
 Free to use, modify, and improve.
 
-Used API: Open Weather Map API https://openweathermap.org/api
+Used API: Open Weather Map API https://openweathermap.org/current, https://openweathermap.org/forecast5
 
 
 ### Author - Timothy Blackwood
